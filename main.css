@@ -1,0 +1,185 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0;
+  }
+  .header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .header a {
+    float: none;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .header .btn {
+    background-color: orange;
+  }
+  .hero .illustration-intro {
+    display: flex;
+    float: inline-end;
+    width: 35%;
+  }
+  .hero .btn {
+    background-color: orange;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .hero {
+    padding: 40px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  } 
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .hero img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .stats p {
+    font-size: 1.5em;
+  }
+  .benefits {
+    padding: 40px;
+  }
+  .benefits h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .benefits p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .testimonials {
+    padding: 40px;
+  }
+  .testimonials h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .testimonial {
+    margin-bottom: 20px;
+  }
+  .testimonial p:first-child {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  .team {
+    display: flex;
+    margin-top: 25px;
+  }
+  footer {
+    padding: 0%;
+  }
+  .team-work {
+    background-color: orange;
+    padding-top: 5px;
+    height: 20vh;
+  }
+ 
+
+
+
+
+
+  /* Media query for mobile devices (portrait and landscape) */
+@media (max-width: 500px) {
+    .header {
+      padding: 10px;
+      flex-direction: column;
+    }
+    .header a {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      /* display: none; */
+    }
+    .header-right {
+        /* Remove flex properties for mobile layout */
+        justify-content: inherit;
+        align-items: inherit;
+      }
+    .hero h1 {
+      font-size: 2.5em;
+    }
+    .hero p, .benefits p {
+      font-size: 1em;
+    }
+    .hero .illustration-intro {
+      width: 100%;
+    }
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+    .stats p {
+      font-size: 1.2em;
+    }
+    .testimonials h1 {
+      font-size: 2em;
+    }
+    .team {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .testimonial {
+      margin: 10px 0;
+    }
+      h4 {
+        background-color: darkgoldenrod;
+        padding: 2px 5px;
+      }
+  }
+  
+  /* Media query for tablets */
+  @media (min-width: 768px){
+    .header a {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .hero h1 {
+      font-size: 3em;
+    }
+    .hero p, .benefits p {
+      font-size: 1.1em;
+    }
+  }
+
