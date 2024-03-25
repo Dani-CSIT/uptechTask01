@@ -35,6 +35,17 @@ body {
   .header .btn {
     background-color: orange;
   }
+  .hamburger {
+    background-color: transparent;
+    color: black;
+    border: 0;
+    font-size: 20px;
+    align-items: center;
+    display: none;
+  }
+  /* .hamburger:focus {
+    outline: none;
+  } */
   .hero .illustration-intro {
     display: flex;
     float: inline-end;
@@ -129,12 +140,15 @@ body {
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 10px;
-      /* display: none; */
+      display: none;
     }
     .header-right {
         /* Remove flex properties for mobile layout */
         justify-content: inherit;
         align-items: inherit;
+      }
+      .hamburger {
+        display: block;
       }
     .hero h1 {
       font-size: 2.5em;
